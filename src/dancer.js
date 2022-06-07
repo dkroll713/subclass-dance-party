@@ -38,3 +38,10 @@ MakeDancer.prototype.setPosition = function(top, left) {
   };
   this.$node.css(styleSettings);
 };
+
+MakeDancer.prototype.lineUp = function(top) {
+  var styleSettings = {
+    top: 0,
+    left: 0
+  };
+};
