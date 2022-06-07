@@ -6,7 +6,7 @@ var MakeSuperHearDancer = function(top, left, timeBetweenSteps) {
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
   // this.$node = $(<span class="dancer" id="superHeroDancer"></span>);
-  this.$node = $('<span class="dancer" id="superHeroDancer" ><img src="../gif/batman.gif" class="animated-gif"></img></span>');
+  this.$node = $('<span class="dancer" id="superHeroDancer" ><img src="gif/batman.gif" class="animated-gif"></img></span>');
   this.oldStep = MakeDancer.prototype.step;
   this.oldStep();
   this.setPosition(top, left);
