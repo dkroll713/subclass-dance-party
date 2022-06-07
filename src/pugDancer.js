@@ -1,7 +1,7 @@
 var MakePugDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $(
-    `<span class="dancer" id="pugDancer"><img class="animated-gif" src="gif/pug1.gif"></img>
+    `<span class="dancer" id="pugDancer"><img class="animated-gif" src="gif/pug.gif"></img>
     </span>`);
 
   this.oldStep = MakeDancer.prototype.step;
