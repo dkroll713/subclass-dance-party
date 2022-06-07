@@ -12,6 +12,20 @@ var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
   this.oldStep();
   // this.step();
   this.setPosition(top, left);
+
+  var colors = ['red', 'blue', 'yellow', 'purple', 'orange', 'green'];
+  var colorMin = 0;
+  var colorMax = colors.length - 1;
+  var getrandomInt = function(max) {
+    return Math.floor(Math.random() * max);
+  };
+  this.color = colors[getrandomInt(colorMax)];
+  var styleSettings = {
+    top: top,
+    left: left,
+    border: 10 + 'px solid ' + this.color
+  };
+  this.$node.css(styleSettings);
 };
 
 MakeBlinkyDancer.prototype = Object.create(MakeDancer.prototype);
@@ -24,4 +38,17 @@ MakeBlinkyDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   this.$node.toggle();
+};
+
+
+MakeBlinkyDancer.prototype.setPosition = function(top, left, color) {
+  // Use css top and left properties to position our <span> tag
+  // where it belongs on the page. See http://api.jquery.com/css/
+  //
+  var styleSettings = {
+    top: top,
+    left: left,
+    color: color
+  };
+  this.$node.css(styleSettings);
 };

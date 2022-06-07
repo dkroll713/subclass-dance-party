@@ -9,18 +9,32 @@
     <script src="src/superHeroDancer.js"></script>
     <script src="src/pugDancer.js"></script>
   </head>
-  <body>
+  <body class="container">
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>
-      <a href="#" class="addPugButton" data-dancer-maker-function-name="MakePugDancer">add a pug dancer</a>
-      <a href="#" class="addSuperHerobutton" data-dancer-maker-function-name="MakeSuperHearDancer">add a super hero dancer</a>
-
+      <span class="title">Object Disco</span>
+      <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="MakeBlinkyDancer">Blinky Dancer</a>
+      <a href="#" class="addPugButton btn" data-dancer-maker-function-name="MakePugDancer">Pug Dancer</a>
+      <a href="#" class="addSuperHerobutton btn" data-dancer-maker-function-name="MakeSuperHearDancer">Super Hero Dancer</a>
+      <a href="#" class="lineUp btn">One Side</a>
+      <a href="#" class="BackToDancing btn" data-dancer-function-name="dancer.setPosition">Disco</a>
+      <audio
+        controls
+        class="btn"
+        src="../gif/music.mp4">
+    </audio>
     </div>
     <script src="src/init.js"></script>
     <video autoplay muted loop id="myVideo">
       <source src="../gif/video.mp4" type="video/mp4">
     </video>
+
+    <!-- <audio
+        controls
+        src="../gif/music.mp4">
+    </audio> -->
+    <!-- <embed name="SlowAcid" src="../gif/music.mp4" loop="true" hidden="false" autostart="true"></embed> -->
+
+
 
   </body>
 </html>

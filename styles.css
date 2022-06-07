@@ -16,14 +16,45 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
+  display: flex;
+  color:red;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .title{
   background-color: #777;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
+
+.btn {
+  justify-content: space-evenly;
+  padding: 1%;
+  padding-top: 0;
+  border: 2px solid black;
+  height: 30px;
+  width: 100%;
+  text-decoration: none;
+  color: red;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-align: center;
+
+}
+
+.lineup {
+  width: 100px;
+}
+
+/* .container{
+  display: flex;
+} */
+
 .dancer{
   max-height: 100px;
   max-width: 100px;
-  position:absolute;
+  position: absolute;
+  /* flex-direction: column;
+  align-items: flex-start; */
 }
 
 #blinkyDancer{
@@ -35,6 +66,17 @@ body, a:link, a:visited, a:active{
 #pugDancer{
   position:absolute;
 }
+
+#pugDancer :hover{
+  /* position: none;
+  float: left;
+  height: 500px;
+  width: 500px; */
+  cursor: pointer;
+  transform: scale(10,10);
+  transform-origin: 50% 50%;
+}
+
 img.animated-gif{
   width: 120px;
   height: auto;
@@ -42,6 +84,12 @@ img.animated-gif{
 
 #superHeroDancer{
   position:absolute;
+}
+
+#superHeroDancer :hover {
+  transform: rotate(180deg);
+  width: 200px;
+  height: 200px;
 }
 
 #myVideo {
