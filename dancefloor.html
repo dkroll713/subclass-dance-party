@@ -6,11 +6,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/superHeroDancer.js"></script>
+    <script src="src/pugDancer.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addPugButton" data-dancer-maker-function-name="MakePugDancer">add a pug dancer</a>
+      <a href="#" class="addSuperHerobutton" data-dancer-maker-function-name="MakeSuperHearDancer">add a super hero dancer</a>
+
+    </div>
     <script src="src/init.js"></script>
+    <video autoplay muted loop id="myVideo">
+      <source src="../gif/video.mp4" type="video/mp4">
+    </video>
+
   </body>
 </html>
